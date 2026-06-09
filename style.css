@@ -198,3 +198,65 @@ header {
 .box-curriculo:hover {
   background-color: #dcdcdc;
 }
+
+.projetos {
+  padding: 4rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tituloproj {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.linhaprojetos1 {
+  border: 1px solid black;
+  width: 60%;
+  margin: 0.3rem 0 2.5rem;
+}
+
+.grid-projetos {
+  display: flex;
+  gap: 8px;
+}
+
+.card-projeto {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  text-decoration: none;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-projeto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.card-projeto img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+}
+
+.card-projeto span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.linhaprojetos2 {
+  border: 1px solid black;
+  width: 60%;
+  margin: 2.5rem 0 0 auto;
+}
