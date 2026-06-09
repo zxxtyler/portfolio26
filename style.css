@@ -218,13 +218,12 @@ header {
 
 .grid-projetos {
   display: flex;
-  gap: 8px;
+  gap: 2.5em;
 }
 
 .card-projeto {
   position: relative;
   overflow: hidden;
-  flex: 1;
   text-decoration: none;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -233,7 +232,6 @@ header {
 .card-projeto:hover {
   transform: scale(1.03);
   box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.25);
-  z-index: 1;
 }
 
 .card-projeto img {
@@ -259,4 +257,56 @@ header {
   border: 1px solid black;
   width: 60%;
   margin: 2.5rem 0 0 auto;
+}
+
+.certificados {
+  background-color: #272729;
+  color: white;
+  padding: 4rem 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulocert {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0 0 3rem;
+}
+
+.lista-cert {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.item-cert {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.item-cert img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-cert img:hover {
+  transform: scale(1.5);
+}
+
+.info-cert h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+}
+
+.info-cert p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 500px;
 }
